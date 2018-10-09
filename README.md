@@ -135,10 +135,8 @@ _链接_:
 _图片_:  
 > \![gugong]\(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539059811385&di=9902f126f1b4cf55c41ecedc46140998&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fcc11728b4710b912fcc749f6c9fdfc03924522b7.jpg)  
 > **效果：**
-![gugong](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539059811385&di=9902f126f1b4cf55c41ecedc46140998&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fcc11728b4710b912fcc749f6c9fdfc03924522b7.jpg)
+![gugong](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539059811385&di=9902f126f1b4cf55c41ecedc46140998&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fcc11728b4710b912fcc749f6c9fdfc03924522b7.jpg)  
 
-<br>
-<br>
 
 # 二、高级用法
 
@@ -172,11 +170,19 @@ _图片_:
 流程图的绘制是通过一段代码来实现的，通过` ``` `包裹。
 嵌套内容 graph ...，...表示流程图类型。流程图分为竖向和横向两大类，竖向包括自上而下和自下而上两种顺序，横向包括从右到左和从左到右两种顺序。
 其对应语法为:TB - top bottom（自上而下）BT - bottom top（自下而上）RL - right left（从右到左）LR - left right（从左到右）
+
 那我们来看看流程图的写法：  
 \```  
 graph RL  
 A-guocheng->B   
 \```
+
+显示效果
+
+```
+graph LR
+A-->B
+```
 ## 甘特图
 
 ## 时序图
