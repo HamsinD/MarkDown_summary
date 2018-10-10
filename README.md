@@ -71,17 +71,17 @@ MarkDown是一种轻量级标记语言，以一种纯文本的形式编辑，最
   如果想要将前面的原点换成数字，变成有序列表，那就在每行前面加 1.&nbsp; 2.&nbsp; 3.&nbsp;&nbsp;即可。  
 
 例如：  
-> 1\. 例子1，我说。。。  
-> 2\. 例子2，我说。。。  
-> 3\. 例子3，我说。。。  
-> 4\. 例子4，我说。。。
->> 	4\.1 例子4的介绍。。。  
+1\. 例子1，我说。。。  
+2\. 例子2，我说。。。  
+3\. 例子3，我说。。。  
+4\. 例子4，我说。。。  
+&nbsp;&nbsp;4\.1 例子4的介绍。。。  
 
 显示效果：
 1. 例子1，我说。。。  
 2. 例子2，我说。。。  
 3. 例子3，我说。。。  
-4. 例子4，我说。。。
+4. 例子4，我说。。。  
 	4.1 例子4的介绍。。。
 
 ## 粗体和斜体
@@ -178,8 +178,30 @@ A-guocheng->B
 \```
 
 显示效果
+```flow
+st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes 
+or No?|approved:>http://www.baidu.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
 
+<<<<<<< .mine
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e
+```
+
+
+=======
+>>>>>>> .r14
 ## 甘特图
+
 
 ## 时序图
 
