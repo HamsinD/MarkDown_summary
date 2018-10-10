@@ -136,9 +136,9 @@ _图片_:
 表格的写法比较有意思，通过`|`和`-`来绘制表格，具体看写法：  
 ```
 | tab1       | tab2     | tab3    |
-| ---------- |:--------:| -----:  |
-| row col    | row col  | row col |
-| row col    | row col  | row col |
+| ---------- |:--------:| -------:|
+| xxxxxxx    | xxxxxxx  | xxxxxxx |
+| xxxxxxx    | xxxxxxx  | xxxxxxx |
 ```
 显示效果:
 
