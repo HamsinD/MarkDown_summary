@@ -179,8 +179,7 @@ A-guocheng->B
 
 显示效果
 
-```
-graph LR
+```graph LR
 A-->B
 ```
 ## 甘特图
