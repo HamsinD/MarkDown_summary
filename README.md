@@ -140,11 +140,13 @@ _图片_:
 | row col    | row col  | row col |
 | row col    | row col  | row col |
 ```
-显示效果：
+显示效果:
+
 | tab1       | tab2     | tab3    |
 | ---------- |:--------:| -------:|
 | xxxxxxx    | xxxxxxx  | xxxxxxx |
 | xxxxxxx    | xxxxxxx  | xxxxxxx |
+
 **注意：** 表头线`-`两侧的`:`用来设置居中方式。
 
 >注意点：  
