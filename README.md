@@ -11,13 +11,7 @@ MarkDown是一种轻量级标记语言，以一种纯文本的形式编辑，最
 > * [粗体和斜体](##粗体和斜体)
 > * [代码引用](##代码引用)
 > * [链接与图片](##链接与图片)
-### [二、高级用法](#二、高级用法)
-> * [待办和清单](##待办和清单)
 > * [表格](##表格)
-> * [流程图](##流程图)
-> * [甘特图](##甘特图)
-> * [序列图](##序列图)
-### 三、总结
 ----
 
 # 一、基本用法
@@ -138,20 +132,6 @@ _图片_:
 ![gugong](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539059811385&di=9902f126f1b4cf55c41ecedc46140998&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fcc11728b4710b912fcc749f6c9fdfc03924522b7.jpg)  
 
 
-# 二、高级用法
-
-## 待办和清单
-在工作中，当我们用到待办清单时，我们可以通过在清单文本前加上`- [ ]`、`- [x]` 区分待办和已办。- [ ] 表示未完成，- [x] 表示已完成。
-具体展示效果如下：  
-\> - [x] 和朋友吃饭  
-	\> - [x] 打车去西湖  
-\> - [ ] 跑步  
-\> - [ ] 看书  
-显示效果：
-> - [x] 和朋友吃饭
->	- [x] 打车去西湖
-> - [ ] 跑步
-> - [ ] 看书
 ## 表格
 表格的写法比较有意思，通过`|`和`-`来绘制表格，具体看写法：  
 ```
@@ -166,44 +146,6 @@ _图片_:
 | xxxxxxx    | xxxxxxx  | xxxxxxx |
 | xxxxxxx    | xxxxxxx  | xxxxxxx |
 **注意：** 表头线`-`两侧的`:`用来设置居中方式。
-## 流程图
-流程图的绘制是通过一段代码来实现的，通过` ``` `包裹。
-嵌套内容 graph ...，...表示流程图类型。流程图分为竖向和横向两大类，竖向包括自上而下和自下而上两种顺序，横向包括从右到左和从左到右两种顺序。
-其对应语法为:TB - top bottom（自上而下）BT - bottom top（自下而上）RL - right left（从右到左）LR - left right（从左到右）
-
-那我们来看看流程图的写法：  
-\```  
-graph RL  
-A-guocheng->B   
-\```
-
-显示效果
-```flow
-st=>start: Start|past:>http://www.google.com[blank]
-e=>end: End:>http://www.google.com
-op1=>operation: My Operation|past
-op2=>operation: Stuff|current
-sub1=>subroutine: My Subroutine|invalid
-cond=>condition: Yes 
-or No?|approved:>http://www.baidu.com
-c2=>condition: Good idea|rejected
-io=>inputoutput: catch something...|request
-
-<<<<<<< .mine
-st->op1(right)->cond
-cond(yes, right)->c2
-cond(no)->sub1(left)->op1
-c2(yes)->io->e
-c2(no)->op2->e
-```
-
-
-=======
->>>>>>> .r14
-## 甘特图
-
-
-## 时序图
 
 >注意点：  
 
